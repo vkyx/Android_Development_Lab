@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"   >
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a text!"
+        />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/message"
+        />
+
+    <Button
+        android:id="@+id/button_below"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/send"
+        android:onClick="sentIntent"
+        />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="onToggleButtonClicked"
+        android:text="ToggleButton"
+        />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textOn="on"
+        android:textOff="off"
+        android:onClick="onSwitchClicked"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox_milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Milk"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox_sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sugar"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/radio_cavemen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+        <RadioButton
+            android:id="@+id/radio_astronauts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:entries="@array/spinner_values" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="Godness"
+        android:src="@drawable/lena"
+        />
+
+    <Button
+        android:id="@+id/button_with_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/android"
+        android:text="Click Me"
+        android:onClick="onImageButtonClicked"
+        />
+
+</LinearLayout>
+</ScrollView>
